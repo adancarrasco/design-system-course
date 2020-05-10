@@ -11,9 +11,12 @@ export interface IButtonProps {
 const resolveChildren = (children) =>
   typeof children === 'function' ? children : <span>{children}</span>
 
-const Button: React.FC<IButtonProps> = ({ StartIcon, children, EndIcon, onClick = () => {} }) => {
+const Button: React.FC<IButtonProps> = (
+  { StartIcon, children, EndIcon, onClick = () => {} },
+  ...rest
+) => {
   return (
-    <ButtonStyled onClick={onClick}>
+    <ButtonStyled onClick={onClick} {...rest}>
       {StartIcon && <StartIcon />}
       {children && resolveChildren(children)}
       {EndIcon && <EndIcon />}
