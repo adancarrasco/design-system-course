@@ -1,8 +1,11 @@
 import React from 'react'
 import { render } from '@testing-library/react'
+import { matchers } from 'jest-emotion'
 import '@testing-library/jest-dom/extend-expect'
 
 import Typography, { TypographyType } from '.'
+
+expect.extend(matchers)
 
 describe('Typography Component', () => {
   const renderComponent = (type?: TypographyType) =>
