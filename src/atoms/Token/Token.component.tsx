@@ -6,7 +6,7 @@ export interface ITokenProps extends ITokenStyledProps {
 }
 
 const Token: React.FC<ITokenProps> = ({ children, ...rest }) => (
-  <TokenStyled role="button" aria-role="button" {...rest}>
+  <TokenStyled role="button" {...rest}>
     {children}
   </TokenStyled>
 )

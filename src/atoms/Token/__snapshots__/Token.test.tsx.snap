@@ -18,7 +18,6 @@ exports[`Token Component matches snapshot and default render 1`] = `
 }
 
 <span
-  aria-role="button"
   class="emotion-0"
   role="button"
 >
