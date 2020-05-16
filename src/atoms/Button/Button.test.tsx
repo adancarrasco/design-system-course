@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from '@testing-library/react'
 import '@testing-library/jest-dom/extend-expect'
-import { AccessAlarm, ThreeDRotation } from '@material-ui/icons'
+import { AccessAlarm } from '@material-ui/icons'
 
 import Button, { IButtonProps } from '.'
 
