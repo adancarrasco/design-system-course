@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Token Component matches snapshot and default render 1`] = `
+.emotion-0 {
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid;
+  border-color: #ababab;
+  border-radius: 4px;
+  color: #000;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 0.8rem;
+  font-weight: normal;
+  padding: 0.2rem 0.3rem;
+}
+
+<span
+  aria-role="button"
+  class="emotion-0"
+  role="button"
+>
+  Token
+</span>
+`;
