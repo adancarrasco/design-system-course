@@ -27,7 +27,7 @@ describe('Tag Component', () => {
     }
     const { getByTestId } = renderComponent(props, dataTestId)
     const container = getByTestId('tag')
-    expect(container).toHaveStyleRule('height', '3rem')
+    expect(container).toHaveStyleRule('height', '2.5rem')
   })
 
   it('should render with custom props', () => {
