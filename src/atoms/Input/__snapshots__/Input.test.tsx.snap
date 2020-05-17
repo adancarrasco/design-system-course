@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input Component matches snapshot and default render 1`] = `
+.emotion-0 {
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: #6868ff;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  resize: none;
+  width: 100%;
+  min-height: 20px;
+}
+
+<textarea
+  class="emotion-0"
+  placeholder="Add more detailed description..."
+>
+  This is the input value
+</textarea>
+`;
