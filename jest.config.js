@@ -14,4 +14,9 @@ module.exports = {
       'identity-obj-proxy',
     '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
   },
+  globals: {
+    'ts-jest': {
+      isolatedModules: true,
+    },
+  },
 }
