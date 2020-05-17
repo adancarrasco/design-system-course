@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Component matches snapshot and default render 1`] = `
+.emotion-5 {
+  background-color: #fff;
+  box-shadow: 0 1px 0 rgba(9,30,66,.25);
+  box-sizing: border-box;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0.4rem;
+  position: relative;
+  width: 100%;
+}
+
+.emotion-5:hover {
+  background-color: #f4f5f6;
+}
+
+.emotion-5:hover .MuiSvgIcon-root:first-of-type {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.emotion-0.MuiSvgIcon-root {
+  display: none;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.3rem;
+}
+
+.emotion-1 {
+  background-color: red;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 3rem;
+  height: 0.4rem;
+  border-radius: 3px;
+  margin-right: 0.4rem;
+}
+
+.emotion-1:hover {
+  background-color: #ebebeb;
+}
+
+.emotion-4 {
+  margin-top: 0.3rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.emotion-4 > div:first-of-type {
+  color: #ababab;
+}
+
+.emotion-4 > div:first-of-type > svg {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+<div
+  class="emotion-5"
+  data-testid="card"
+  role="button"
+>
+  <svg
+    aria-hidden="true"
+    class="MuiSvgIcon-root emotion-0 MuiSvgIcon-fontSizeSmall"
+    focusable="false"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M14.06 9.02l.92.92L5.92 19H5v-.92l9.06-9.06M17.66 3c-.25 0-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29zm-3.6 3.19L3 17.25V21h3.75L17.81 9.94l-3.75-3.75z"
+    />
+  </svg>
+  <div
+    class="emotion-2"
+  >
+    <span
+      class="emotion-1"
+    />
+  </div>
+  Test
+  <div
+    class="emotion-4"
+  >
+    <div>
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"
+        />
+      </svg>
+      <span
+        class="emotion-3"
+      >
+        2
+      </span>
+    </div>
+    <div />
+  </div>
+</div>
+`;
