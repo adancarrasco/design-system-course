@@ -23,21 +23,35 @@ const Badge: React.FC<IBadgeProps> = ({ userName, backgroundImage, ...rest }) =>
   return BadgeComponent
 }
 
+type BadgeSizeType = 'small' | 'medium' | 'xl'
+
 interface BadgeStyledProps {
   backgroundImage?: string
-  size?: string
+  size?: BadgeSizeType
   backgroundColor?: string
 }
 
-const defaultSize = '60px'
+const sizeModes = {
+  small: '1.8rem',
+  medium: '3rem',
+  large: '4rem',
+}
+
+const fontSizes = {
+  small: '0.75rem',
+  medium: '2rem',
+  large: '3rem',
+}
 
 const BadgeStyled = styled.span<BadgeStyledProps>`
-  width: ${(props) => props.size ?? defaultSize};
-  height: ${(props) => props.size ?? defaultSize};
+  width: ${({ size }) => (size ? sizeModes[size] : sizeModes['medium'])};
+  height: ${({ size }) => (size ? sizeModes[size] : sizeModes['medium'])};
   background-image: ${(props) => 'url("' + props.backgroundImage + '")' ?? ''};
   background-color: ${(props) => props.backgroundColor ?? '#ababab;'};
-  background-size: ${(props) => props.size ?? defaultSize};
+  background-size: ${({ size }) => (size ? sizeModes[size] : sizeModes['medium'])};
   display: inline-flex;
+  font-size: ${({ size }) => (size ? fontSizes[size] : fontSizes['medium'])};
+  font-weight: bold;
   border-radius: 50%;
   justify-content: center;
   flex-direction: column;
