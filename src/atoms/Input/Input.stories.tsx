@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 
 import Input from '.'
 
-storiesOf('Molecules|Input', module)
+storiesOf('Atoms|Input', module)
   .add('Default', () => (
     <div style={{ width: '500px' }}>
       <Input placeholder="Add more detailed description..." />

@@ -5,10 +5,17 @@ export interface IInputProps extends IInputStyledProps {
   placeholder?: string
   value?: string
   onChange?: () => void
+  onBlur?: () => void
 }
 
-const Input: React.FC<IInputProps> = ({ placeholder, value, onChange }) => (
-  <InputStyled placeholder={placeholder} value={value} onChange={onChange} />
+const Input: React.FC<IInputProps> = ({ placeholder, value, onChange, onBlur }) => (
+  <InputStyled
+    autoFocus
+    placeholder={placeholder}
+    value={value}
+    onChange={onChange}
+    onBlur={onBlur}
+  />
 )
 
 interface IInputStyledProps {
@@ -19,6 +26,7 @@ const InputStyled = styled.textarea<IInputStyledProps>`
   border: 1px solid;
   border-radius: 4px;
   border-color: ${(props) => props.borderColor ?? '#6868ff'};
+  box-sizing: border-box;
   font-size: 0.9rem;
   padding: 0.5rem;
   resize: none;
