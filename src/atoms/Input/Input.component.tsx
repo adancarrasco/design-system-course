@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 export interface IInputProps extends IInputStyledProps {
   placeholder?: string
   value?: string
-  onChange?: () => void
+  onChange?: (e: React.ChangeEvent<HTMLTextAreaElement>) => void
   onBlur?: () => void
 }
 
