@@ -11,6 +11,7 @@ storiesOf('Molecules|Card', module)
       commentsCount={3}
       isWatching
       watchers={[{ userName: 'Adan Carrasco' }]}
+      onClick={() => console.log('Card click!')}
     >
       Test
     </Card>
