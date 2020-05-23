@@ -33,7 +33,7 @@ interface BadgeStyledProps {
 
 const sizeModes = {
   small: '1.8rem',
-  medium: '3rem',
+  medium: '2.7rem',
   large: '4rem',
 }
 
