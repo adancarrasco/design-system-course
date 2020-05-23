@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
 
-export interface IButtonProps {
+export interface IButtonProps extends IButtonStyledProps {
   StartIcon?: React.ReactType
   children?: React.ReactNode | string
   EndIcon?: React.ReactType
@@ -11,10 +11,13 @@ export interface IButtonProps {
 const resolveChildren = (children) =>
   typeof children === 'function' ? children : <span>{children}</span>
 
-const Button: React.FC<IButtonProps> = (
-  { StartIcon, children, EndIcon, onClick = () => {} },
+const Button: React.FC<IButtonProps> = ({
+  StartIcon,
+  children,
+  EndIcon,
+  onClick = () => {},
   ...rest
-) => {
+}) => {
   return (
     <ButtonStyled onClick={onClick} {...rest}>
       {StartIcon && <StartIcon />}
@@ -24,15 +27,16 @@ const Button: React.FC<IButtonProps> = (
   )
 }
 
-interface ButtonStyledProps {
+interface IButtonStyledProps {
   color?: string
+  colorHover?: string
   backgroundColor?: string
   backgroundColorHover?: string
   fontSize?: string
   padding?: string
 }
 
-const ButtonStyled = styled.button<ButtonStyledProps>`
+const ButtonStyled = styled.button<IButtonStyledProps>`
   color: ${(props) => props.color ?? '#fff'};
   background-color: ${(props) => props.backgroundColor ?? 'rgba(130, 130, 130, 0.5)'};
   font-size: ${(props) => props.fontSize ?? '1rem'};
@@ -40,6 +44,10 @@ const ButtonStyled = styled.button<ButtonStyledProps>`
   cursor: pointer;
   border: none;
   border-radius: 4px;
+  &:hover {
+    color: ${(props) => props.colorHover ?? '#ababab'};
+    background-color: ${(props) => props.backgroundColorHover ?? 'rgba(145, 145, 145, 0.5)'};
+  }
   & svg:first-of-type {
     margin-right: 4px;
   }
@@ -52,9 +60,6 @@ const ButtonStyled = styled.button<ButtonStyledProps>`
   & > svg,
   & > span {
     vertical-align: middle;
-  }
-  &:hover {
-    background-color: ${(props) => props.backgroundColorHover ?? 'rgba(145, 145, 145, 0.5)'};
   }
 `
 
