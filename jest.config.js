@@ -2,6 +2,7 @@ module.exports = {
   roots: ['./src'],
   setupFilesAfterEnv: ['./jest.setup.ts'],
   moduleFileExtensions: ['ts', 'tsx', 'js'],
+  snapshotSerializers: ['jest-emotion'],
   testPathIgnorePatterns: ['node_modules/'],
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
