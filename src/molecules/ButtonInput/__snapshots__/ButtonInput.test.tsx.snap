@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonInput Component matches snapshot and default render 1`] = `
+.emotion-1 {
+  cursor: pointer;
+  background-color: #f1f1f1;
+  padding: 0.5rem 0.6rem;
+  min-height: 40px;
+}
+
+.emotion-1:hover {
+  background-color: #e4e4e4;
+}
+
+.emotion-0 {
+  color: #3d3d3d;
+}
+
+<div
+  class="emotion-1"
+  data-testid="buttonInput"
+>
+  <span
+    class="emotion-0"
+    color="#3d3d3d"
+  >
+    Add more detailed description...
+  </span>
+</div>
+`;
