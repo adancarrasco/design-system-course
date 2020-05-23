@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContextMenu Component matches snapshot and default render 1`] = `
+.emotion-1 {
+  padding: 0.5rem;
+  position: relative;
+}
+
+.emotion-0 {
+  color: #fff;
+  background-color: rgba(130,130,130,0.5);
+  font-size: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.emotion-0:hover {
+  color: #ababab;
+  background-color: rgba(145,145,145,0.5);
+}
+
+.emotion-0 svg:first-of-type {
+  margin-right: 4px;
+}
+
+.emotion-0 svg:last-child {
+  margin-left: 4px;
+}
+
+.emotion-0 svg:only-child {
+  margin: 0;
+}
+
+.emotion-0 > svg,
+.emotion-0 > span {
+  vertical-align: middle;
+}
+
+<div
+  class="emotion-1"
+  data-testid="context-menu"
+>
+  <button
+    class="emotion-0"
+  >
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+      />
+    </svg>
+  </button>
+</div>
+`;
