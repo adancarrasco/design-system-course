@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputComment Component matches snapshot and default render 1`] = `
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 340px;
+}
+
+.emotion-4 > span {
+  margin-right: 0.5rem;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.emotion-4 > div {
+  width: calc(100% - 3.7rem);
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+.emotion-0 {
+  width: 2.7rem;
+  height: 2.7rem;
+  background-image: url("undefined");
+  background-color: #ababab;
+  background-size: 2.7rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+.emotion-3 {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.emotion-2 {
+  cursor: pointer;
+  background-color: #f1f1f1;
+  padding: 0.5rem 0.6rem;
+  min-height: 40px;
+}
+
+.emotion-2:hover {
+  background-color: #e4e4e4;
+}
+
+.emotion-1 {
+  color: #3d3d3d;
+}
+
+<div
+  class="emotion-4"
+>
+  <span
+    class="emotion-0"
+  >
+    AC
+  </span>
+  <div
+    class="emotion-3"
+  >
+    <div
+      class="emotion-2"
+    >
+      <span
+        class="emotion-1"
+        color="#3d3d3d"
+      >
+        Add more detailed description...
+      </span>
+    </div>
+  </div>
+</div>
+`;
