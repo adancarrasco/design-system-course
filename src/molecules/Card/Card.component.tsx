@@ -9,11 +9,12 @@ import { Typography } from '../../atoms'
 // Think of adding DueDate
 
 export interface ICardProps extends ICardStyledProps {
-  children: React.ReactNode | string
+  children: string
   tagsProps?: ITagProps[]
   isWatching?: boolean
   commentsCount?: number
   watchers?: IBadgeProps[]
+  onClick?: () => void
 }
 
 const Card: React.FC<ICardProps> = ({
@@ -22,14 +23,15 @@ const Card: React.FC<ICardProps> = ({
   isWatching,
   commentsCount,
   watchers,
+  onClick,
   ...rest
 }) => (
-  <CardStyled role="button" {...rest}>
+  <CardStyled role="button" {...rest} onClick={onClick}>
     <EditOutlinedStyled fontSize="small" />
     <TagsContainerStyled>
       {tagsProps && tagsProps.map((tagProps, i) => <TagStyled key={i} {...tagProps} />)}
     </TagsContainerStyled>
-    {children}
+    <Typography>{children}</Typography>
     <StatusContainerStyled>
       <div>
         {isWatching && <VisibilityOutlined fontSize="small" />}
