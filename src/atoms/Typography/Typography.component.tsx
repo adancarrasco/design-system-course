@@ -12,9 +12,13 @@ export interface TypographyComponentProps extends TypographyCSSProps {
   children: React.ReactNode | string
 }
 
-const Typography: React.FC<TypographyComponentProps> = ({ children, type = 'default' }) => {
+const Typography: React.FC<TypographyComponentProps> = ({
+  children,
+  type = 'default',
+  color = '#3d3d3d',
+}) => {
   const TypographyComponent = typographyTypes[type]
-  return <TypographyComponent>{children}</TypographyComponent>
+  return <TypographyComponent color={color}>{children}</TypographyComponent>
 }
 
 const AllCaps = styled.span<TypographyCSSProps>`
