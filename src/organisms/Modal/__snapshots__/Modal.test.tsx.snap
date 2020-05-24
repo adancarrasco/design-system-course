@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal Component matches snapshot and default render 1`] = `
+.emotion-4 {
+  position: relative;
+  border-radius: 2px;
+  margin: 48px 0 80px;
+  padding: 1.5rem;
+  background-color: #eaeaea;
+  width: 768px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-0 {
+  color: #fff;
+  background-color: transparent;
+  font-size: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  color: #ababab;
+}
+
+.emotion-0:hover {
+  color: #ababab;
+  background-color: transparent;
+}
+
+.emotion-0 svg:first-of-type {
+  margin-right: 4px;
+}
+
+.emotion-0 svg:last-child {
+  margin-left: 4px;
+}
+
+.emotion-0 svg:only-child {
+  margin: 0;
+}
+
+.emotion-0 > svg,
+.emotion-0 > span {
+  vertical-align: middle;
+}
+
+.emotion-0:hover {
+  color: #7b7b7b;
+}
+
+.emotion-3 {
+  position: absolute;
+  bottom: 1.5rem;
+}
+
+<div
+  class="emotion-4"
+  data-testid="modal"
+>
+  <button
+    class="emotion-0"
+  >
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+      />
+    </svg>
+  </button>
+  <div
+    class="emotion-1"
+  >
+    Some title here
+  </div>
+  <div
+    class="emotion-1"
+  >
+    <p>
+      Test body
+    </p>
+  </div>
+  <div
+    class="emotion-3"
+  >
+    <span>
+      This is my footer
+    </span>
+  </div>
+</div>
+`;
