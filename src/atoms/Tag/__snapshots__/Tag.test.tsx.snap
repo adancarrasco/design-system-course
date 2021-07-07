@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tag Component matches snapshot and default render 1`] = `
+.emotion-0 {
+  background-color: #ababab;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 3rem;
+  height: 0.4rem;
+  border-radius: 3px;
+}
+
+.emotion-0:hover {
+  background-color: #ebebeb;
+}
+
+<span
+  class="emotion-0"
+  data-testid="tag"
+/>
+`;
