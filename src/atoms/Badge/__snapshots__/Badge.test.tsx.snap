@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge Component matches snapshot 1`] = `
+.emotion-0 {
+  width: 3rem;
+  height: 3rem;
+  background-image: url("undefined");
+  background-color: #ababab;
+  background-size: 3rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+<span
+  class="emotion-0"
+>
+  AC
+</span>
+`;
