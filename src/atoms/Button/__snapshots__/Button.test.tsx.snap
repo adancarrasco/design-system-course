@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Component matches snapshot 1`] = `
+<span>
+  Hello
+</span>
+`;
+
+exports[`Button Component matches snapshot with StartIcon 1`] = `
+<span>
+  Hello
+</span>
+`;
