@@ -66,9 +66,9 @@ const ContextMenu: React.FC<IContextMenuProps> = ({
                 <Button
                   backgroundColorHover="transparent"
                   backgroundColor="transparent"
+                  StartIcon={CloseOutlined}
                   color={closeButtonColor}
                   colorHover={closeButtonColorHover}
-                  StartIcon={CloseOutlined}
                   onClick={closeOverlay}
                 />
               </TitleContainerStyled>

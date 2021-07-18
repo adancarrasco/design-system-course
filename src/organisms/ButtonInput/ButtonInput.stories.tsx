@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 
 import ButtonInput from '.'
 
-storiesOf('Molecules|ButtonInput', module)
+storiesOf('Organisms|ButtonInput', module)
   .add('Default', () => (
     <div style={{ width: '400px' }}>
       <ButtonInput

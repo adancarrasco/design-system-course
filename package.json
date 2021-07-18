@@ -59,6 +59,7 @@
     "jest-emotion": "^10.0.32",
     "prettier": "^2.0.5",
     "react": "^16.13.1",
+    "react-beautiful-dnd": "^13.0.0",
     "react-dom": "^16.13.1",
     "rollup": "^2.7.6",
     "rollup-plugin-copy": "^3.3.0",

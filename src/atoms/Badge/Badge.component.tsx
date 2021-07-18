@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from '@emotion/styled'
 
+import tokens from '../../tokens'
+
 export interface IBadgeProps extends BadgeStyledProps {
   userName?: string
   initials?: string
@@ -39,15 +41,16 @@ const sizeModes = {
 
 const fontSizes = {
   small: '0.75rem',
-  medium: '2rem',
+  medium: '1rem',
   large: '3rem',
 }
 
 const BadgeStyled = styled.span<BadgeStyledProps>`
   width: ${({ size }) => (size ? sizeModes[size] : sizeModes['medium'])};
   height: ${({ size }) => (size ? sizeModes[size] : sizeModes['medium'])};
-  background-image: ${(props) => 'url("' + props.backgroundImage + '")' ?? ''};
-  background-color: ${(props) => props.backgroundColor ?? '#ababab;'};
+  background-image: ${(props) =>
+    props.backgroundImage ? 'url("' + props.backgroundImage + '")' : ''};
+  background-color: ${(props) => props.backgroundColor ?? tokens.button.default.background};
   background-size: ${({ size }) => (size ? sizeModes[size] : sizeModes['medium'])};
   display: inline-flex;
   font-size: ${({ size }) => (size ? fontSizes[size] : fontSizes['medium'])};

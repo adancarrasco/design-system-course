@@ -7,7 +7,7 @@ import { CloseOutlined } from '@material-ui/icons'
 export interface IModalProps extends IModalStyledProps {
   header?: React.ReactNode
   title: string
-  children: React.ReactNode
+  children: React.ReactNode | string
   footer?: React.ReactNode
   shouldShow: boolean
   onCloseModal?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
@@ -23,6 +23,10 @@ const Modal: React.FC<IModalProps> = ({
   ...rest
 }) => {
   const [isOpen, setIsOpen] = React.useState(shouldShow)
+
+  React.useEffect(() => {
+    setIsOpen(shouldShow)
+  }, [shouldShow])
 
   const onCloseModalHandler = (e) => {
     onCloseModal && onCloseModal(e)

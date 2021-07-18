@@ -12,7 +12,6 @@ const saveId = 'save'
 export interface IButtonInputProps {
   children?: string
   isEditMode?: boolean
-  isEditing?: boolean
   placeholder?: string
   onClick?: (e: React.MouseEvent) => void
   saveText?: string

@@ -12,6 +12,8 @@ storiesOf('Organisms|InputComment', module).add('Default', () => (
       onChange={() => console.log('Changing...')}
       onCancelClick={() => console.log('Cancel click')}
       badgeOptions={{ userName: 'Adan Carrasco' }}
+      userName="Adán Carrasco"
+      updatedOn="May 18, 2020"
     ></InputComment>
   </div>
 ))
